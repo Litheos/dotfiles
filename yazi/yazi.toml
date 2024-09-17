@@ -1,0 +1,12 @@
+[manager]
+show_hidden = false
+ratio = [2, 4, 7]
+linemode = "mtime"
+
+[opener]
+edit = [
+    { run = 'nvim "$1"', block = true },
+]
+open = [
+    { run = 'xdg-open "$@"', desc = "Open" },
+]

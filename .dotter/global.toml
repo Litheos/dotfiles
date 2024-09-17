@@ -1,0 +1,37 @@
+[helpers]
+
+[default]
+depends = []
+
+[default.files]
+Kvantum = ""
+ags = ""
+alacritty = ""
+btop = ""
+cava = ""
+dconf = ""
+fastfetch = ""
+"gtk-3.0" = ""
+hypr = ""
+nvim = ""
+nwg-look = ""
+qt5ct = ""
+qt6ct = ""
+rofi = ""
+simple-update-notifier = ""
+swappy = ""
+swaync = ""
+systemd = ""
+vesktop = ""
+wallust = ""
+waybar = ""
+wezterm = ""
+wlogout = ""
+xfce4 = ""
+yay = ""
+yazi = ""
+
+[default.variables]
+
+[settings]
+default_target_type = "automatic"

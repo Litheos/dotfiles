@@ -1,0 +1,12 @@
+[window]
+decorations = "None"
+opacity = 0.5
+blur = true
+padding = { x = 4, y = 4 }
+dynamic_padding = true
+[scrolling]
+history = 2000
+multiplier = 1
+[font]
+size = 14.0
+
