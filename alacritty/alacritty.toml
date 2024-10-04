@@ -1,12 +1,18 @@
 [window]
-decorations = "None"
-opacity = 0.5
-blur = true
-padding = { x = 4, y = 4 }
+padding = { x = 16, y = 10 }
 dynamic_padding = true
+decorations = "None"
+opacity = 0.2
+blur = false
 [scrolling]
 history = 2000
 multiplier = 1
 [font]
-size = 14.0
-
+#normal = { family = "alacritty", style = "Regular" }
+size = 14
+[mouse]
+hide_when_typing = true
+[keyboard]
+bindings = [
+{ key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+]
