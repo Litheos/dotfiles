@@ -2,7 +2,7 @@
 padding = { x = 16, y = 10 }
 dynamic_padding = true
 decorations = "None"
-opacity = 0.2
+opacity = 0.3
 blur = false
 [scrolling]
 history = 2000

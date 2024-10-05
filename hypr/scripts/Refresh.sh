@@ -25,9 +25,6 @@ done
 # quit ags
 ags -q
 
-# Wallust refresh
-${SCRIPTSDIR}/WallustSwww.sh &
-
 sleep 0.3
 #Restart waybar
 waybar &

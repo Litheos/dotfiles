@@ -1,5 +1,5 @@
 [manager]
-show_hidden = false
+show_hidden = true
 ratio = [2, 4, 7]
 linemode = "mtime"
 

@@ -12,6 +12,6 @@ if pgrep -x "rofi" >/dev/null; then
     exit 0
 fi
 
-# Open rofi with a dmenu and pass the selected item to xdg-open for Duckduckgo search
-echo "" | rofi -dmenu -config "$rofi_config" -p "Search:" | xargs -I{} xdg-open "https://duckduckgo.co.uk/search?q={}"
+# Open rofi with a dmenu and pass the selected item to xdg-open for Google search
+echo "" | rofi -dmenu -config "$rofi_config" -p "Search:" | xargs -I{} xdg-open "https://www.google.com/search?q={}"
 
