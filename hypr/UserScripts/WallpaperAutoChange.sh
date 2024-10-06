@@ -9,7 +9,7 @@
 
 wallust_refresh=$HOME/.config/hypr/scripts/RefreshNoWaybar.sh
 
-focused_monitor=$(hyprctl monitors | awk '/^Monitor/{name=$2} /focused: yes/{print name}')
+#focused_monitor=$(hyprctl monitors | awk '/^Monitor/{name=$2} /focused: yes/{print name}')
 
 if [[ $# -lt 1 ]] || [[ ! -d $1   ]]; then
 	echo "Usage:
@@ -31,7 +31,7 @@ while true; do
 		done \
 		| sort -n | cut -d':' -f2- \
 		| while read -r img; do
-			swww img -o $focused_monitor "$img" 
+			swww img "$img" 
 			$wallust_refresh
 			sleep $INTERVAL
 			
