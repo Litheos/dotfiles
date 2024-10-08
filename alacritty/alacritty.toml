@@ -8,11 +8,15 @@ blur = false
 history = 2000
 multiplier = 1
 [font]
-#normal = { family = "alacritty", style = "Regular" }
-size = 14
+normal.family = "MonaspiceArNerdFontMono"
+normal.style = "Light"
+italic.family = "MonaspiceXeNerdFontMono"
+italic.style = "LightItalic"
+bold.family = "MonaspiceKrNerdFontMono"
+bold.style = "Bold"
+bold_italic.family = "MonaspiceKrNerdFontMono"
+bold_italic.style = "BoldItalic"
+size = 15
 [mouse]
 hide_when_typing = true
 [keyboard]
-bindings = [
-{ key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
-]

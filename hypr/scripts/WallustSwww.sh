@@ -23,7 +23,9 @@ if [ -f "$cache_file" ]; then
     wallpaper_path=$(cat "$cache_file")
     echo $wallpaper_path
     # symlink the wallpaper to the location Rofi can access
-    if ln -sf "$wallpaper_path" "$HOME/.config/rofi/.current_wallpaper"; then
+    ln -sf "$wallpaper_path" "$HOME/.config/rofi/.current_wallpaper"
+    # Check if the symbolic link was created successfully
+    if [ $? -eq 0 ]; then
         ln_success=true  # Set the flag to true upon successful execution
     fi
     # copy the wallpaper for wallpaper effects
