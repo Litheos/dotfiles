@@ -9,8 +9,6 @@ ags = "~/.config/ags"
 alacritty = "~/.config/alacritty"
 btop = "~/.config/btop"
 cava = "~/.config/cava"
-#dconf = "~/.config/dconf"
-#fastfetch = "~/.config/fastfetch"
 "gtk-3.0" = "~/.config/gtk-3.0"
 hypr = "~/.config/hypr"
 nvim = "~/.config/nvim"
@@ -18,7 +16,7 @@ nwg-look = "~/.config/nwg-look"
 qt5ct = "~/.config/qt5ct"
 qt6ct = "~/.config/qt6ct"
 rofi = "~/.config/rofi"
-#simple-update-notifier = "~/.config/simple-update-notifier"
+
 swappy = "~/.config/swappy"
 swaync = "~/.config/swaync"
 
@@ -39,6 +37,12 @@ yazi = "~/.config/yazi"
 wezterm = "~/.config/wezterm"
 vesktop = "~/.config/vesktop"
 systemd = "~/.config/systemd"
+simple-update-notifier = "~/.config/simple-update-notifier"
+dconf = "~/.config/dconf"
+fastfetch = "~/.config/fastfetch"
+
+[wallpapers.files]
+wallpapers = "~/Pictures/wallpapers"
 
 [settings]
 default_target_type = "symbolic"
