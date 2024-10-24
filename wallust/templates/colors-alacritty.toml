@@ -1,8 +1,5 @@
 # wallust template - colors-alacritty
 
-[window]
-opacity = 0.25
-
 [colors.primary]
 background = '{{background}}'
 foreground = '{{foreground}}'

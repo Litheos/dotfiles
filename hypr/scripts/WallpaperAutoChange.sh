@@ -22,18 +22,20 @@ export SWWW_TRANSITION_FPS=60
 export SWWW_TRANSITION_TYPE=simple
 
 # This controls (in seconds) when to switch to the next image
-INTERVAL=300
+INTERVAL=1800
 
 while true; do
-	find "$1" -type f |
-		while read -r img; do
+	find "$1" -type f \
+		| while read -r img; do
 			echo "$((RANDOM % 1000)):$img"
-		done |
-		sort -n | cut -d':' -f2- |
-		while read -r img; do
+		done \
+		| sort -n | cut -d':' -f2- \
+		| while read -r img; do
+      if [[ "$img" != "$1" ]]; then
 			swww img "$img"
-			sleep 0.5
+            sleep 0.5
 			$wallust_refresh
 			sleep $INTERVAL
+      fi
 		done
 done

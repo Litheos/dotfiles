@@ -34,7 +34,7 @@ palette = "harddark"
 threshold = 11
 
 [templates]
-alacritty.template = "colors-alacritty"
+alacritty.template = "colors-alacritty.toml"
 alacritty.target = "~/.config/alacritty/themes/wallust.toml"
 
 cava.template = 'colors-cava'

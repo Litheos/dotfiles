@@ -23,7 +23,8 @@ fi
 # Retrieve image files using null delimiter to handle spaces in filenames
 mapfile -d '' PICS < <(find -L "${wallDIR}" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" \) -print0)
 
-RANDOM_PIC="${PICS[$((RANDOM % ${#PICS[@]}))]}"
+RANDOM_PIC=${PICS[$RANDOM % ${#PICS[@]}]}
+
 RANDOM_PIC_NAME=". random"
 
 # Rofi command
@@ -68,9 +69,9 @@ main() {
 
   # Random choice case
   if [[ "$choice" == "$RANDOM_PIC_NAME" ]]; then
-    swww img "$RANDOM_PIC" "$SWWW_PARAMS"
-    sleep 0.5
-    "$SCRIPTSDIR/Refresh.sh"
+    swww img $RANDOM_PIC $SWWW_PARAMS
+    sleep 1.0
+    $SCRIPTSDIR/Refresh.sh
     exit 0
   fi
 
@@ -85,7 +86,7 @@ main() {
   done
 
   if [[ $pic_index -ne -1 ]]; then
-    swww img "${PICS[$pic_index]}" "$SWWW_PARAMS"
+    swww img ${PICS[$pic_index]} $SWWW_PARAMS
   else
     echo "Image not found."
     exit 1
@@ -101,4 +102,4 @@ fi
 main
 
 sleep 0.2
-"$SCRIPTSDIR/Refresh.sh"
+$SCRIPTSDIR/Refresh.sh
