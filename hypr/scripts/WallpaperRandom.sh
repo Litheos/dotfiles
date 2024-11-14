@@ -14,7 +14,7 @@ FPS=60
 TYPE="random"
 DURATION=1
 BEZIER=".43,1.19,1,.4"
-SWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration $DURATION --transition-bezier $BEZIER"
+SWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration $DURATION --transition-bezier $BEZIER --resize fit"
 
 swww query || swww-daemon --format xrgb && swww img ${RANDOMPICS} $SWWW_PARAMS
 

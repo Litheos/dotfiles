@@ -29,9 +29,15 @@ yazi = "~/.config/yazi"
 ".bash_logout" = "~/.bash_logout"
 ".bash_profile" = "~/.bash_profile"
 ".bashrc" = "~/.bashrc"
+[default.variables]
+
+[zsh.files]
 ".zprofile" = "~/.zprofile"
 ".zshrc" = "~/.zshrc"
-[default.variables]
+".oh-my-zsh" = "~/.oh-my-zsh"
+
+[fish.files]
+fish = "~/.config/fish"
 
 [optional.files]
 wezterm = "~/.config/wezterm"
