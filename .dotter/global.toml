@@ -10,7 +10,7 @@ alacritty = "~/.config/alacritty"
 btop = "~/.config/btop"
 cava = "~/.config/cava"
 "gtk-3.0" = "~/.config/gtk-3.0"
-hypr = "~/.config/hypr"
+hypr-ash = "~/.config/hypr"
 nvim = "~/.config/nvim"
 nwg-look = "~/.config/nwg-look"
 qt5ct = "~/.config/qt5ct"
@@ -26,10 +26,15 @@ wlogout = "~/.config/wlogout"
 xfce4 = "~/.config/xfce4"
 yazi = "~/.config/yazi"
 
+[default.variables]
+
+[uwsm.files]
+uwsm = "~/.config/uwsm"
+
+[bash.files]
 ".bash_logout" = "~/.bash_logout"
 ".bash_profile" = "~/.bash_profile"
 ".bashrc" = "~/.bashrc"
-[default.variables]
 
 [zsh.files]
 ".zprofile" = "~/.zprofile"
