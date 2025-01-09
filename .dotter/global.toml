@@ -17,6 +17,8 @@ qt5ct = "~/.config/qt5ct"
 qt6ct = "~/.config/qt6ct"
 rofi = "~/.config/rofi"
 
+paru = "~./config/paru"
+
 swappy = "~/.config/swappy"
 swaync = "~/.config/swaync"
 
