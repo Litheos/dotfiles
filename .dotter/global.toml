@@ -4,34 +4,53 @@
 depends = []
 
 [default.files]
-Kvantum = ""
-ags = ""
-alacritty = ""
-btop = ""
-cava = ""
-dconf = ""
-fastfetch = ""
-"gtk-3.0" = ""
-hypr = ""
-nvim = ""
-nwg-look = ""
-qt5ct = ""
-qt6ct = ""
-rofi = ""
-simple-update-notifier = ""
-swappy = ""
-swaync = ""
-systemd = ""
-vesktop = ""
-wallust = ""
-waybar = ""
-wezterm = ""
-wlogout = ""
-xfce4 = ""
-yay = ""
-yazi = ""
+Kvantum = "~/.config/Kvantum"
+ags = "~/.config/ags"
+alacritty = "~/.config/alacritty"
+btop = "~/.config/btop"
+cava = "~/.config/cava"
+"gtk-3.0" = "~/.config/gtk-3.0"
+hypr-ash = "~/.config/hypr"
+nvim = "~/.config/nvim"
+nwg-look = "~/.config/nwg-look"
+qt5ct = "~/.config/qt5ct"
+qt6ct = "~/.config/qt6ct"
+rofi = "~/.config/rofi"
+
+paru = "~./config/paru"
+
+swappy = "~/.config/swappy"
+swaync = "~/.config/swaync"
+
+wallust = "~/.config/wallust"
+waybar = "~/.config/waybar"
+wlogout = "~/.config/wlogout"
+xfce4 = "~/.config/xfce4"
+yazi = "~/.config/yazi"
 
 [default.variables]
 
+[uwsm.files]
+uwsm = "~/.config/uwsm"
+
+[bash.files]
+".bash_logout" = "~/.bash_logout"
+".bash_profile" = "~/.bash_profile"
+".bashrc" = "~/.bashrc"
+
+[fish.files]
+fish = "~/.config/fish"
+
+[optional.files]
+wezterm = "~/.config/wezterm"
+vesktop = "~/.config/vesktop"
+systemd = "~/.config/systemd"
+simple-update-notifier = "~/.config/simple-update-notifier"
+dconf = "~/.config/dconf"
+fastfetch = "~/.config/fastfetch"
+
+[wallpapers.files]
+wallpapers = "~/Pictures/wallpapers"
+
 [settings]
-default_target_type = "automatic"
+default_target_type = "symbolic"

@@ -1,0 +1,3 @@
+[submodule "fire-ags"]
+	path = fire-ags
+	url = git@github.com:Litheos/fire-ags.git
